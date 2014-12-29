@@ -152,4 +152,4 @@ else
 	set_arch="${CARCH}"
 fi
 
-exec ${CARCH:+setarch "$set_arch"} systemd-nspawn "${nspawn_args[@]}" "$@"
+exec systemd-nspawn "${nspawn_args[@]}" "$@"
